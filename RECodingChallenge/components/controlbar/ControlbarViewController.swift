@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-protocol ControlbarDelegate {
+protocol ControlbarDelegate: class {
     func dismiss()
     func play()
     func pause()

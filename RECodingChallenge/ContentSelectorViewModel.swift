@@ -13,7 +13,7 @@ import RxSwift
 let itemsJson: [[String: String]] = [
     [
         "title": "Big Buck Bunny",
-        "source": "https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8"
+        "source": "https://storage.googleapis.com/shaka-demo-assets/angel-one-hls/hls.m3u8"
     ]
 ]
 

@@ -47,7 +47,23 @@
 		0FF722F52170083B00BC3602 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF722F02170083B00BC3602 /* RxSwift.framework */; };
 		0FF722F72170108500BC3602 /* ContentItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF722F62170108500BC3602 /* ContentItemTableViewCell.swift */; };
 		0FF722F921701A0600BC3602 /* ContentItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF722F821701A0600BC3602 /* ContentItemDetailViewController.swift */; };
+		0FF7D808233E9AB900D9149D /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF7D807233E9AB900D9149D /* RxRelay.framework */; };
+		0FF7D809233E9AB900D9149D /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF7D807233E9AB900D9149D /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0FF7D80A233E9AB900D9149D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0FF7D809233E9AB900D9149D /* RxRelay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F78DB6B2174213E00108200 /* PlayerActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerActions.swift; sourceTree = "<group>"; };
@@ -92,6 +108,7 @@
 		0FF722F02170083B00BC3602 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		0FF722F62170108500BC3602 /* ContentItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItemTableViewCell.swift; sourceTree = "<group>"; };
 		0FF722F821701A0600BC3602 /* ContentItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItemDetailViewController.swift; sourceTree = "<group>"; };
+		0FF7D807233E9AB900D9149D /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +118,7 @@
 			files = (
 				0FF722F12170083B00BC3602 /* RxCocoa.framework in Frameworks */,
 				0FF722F22170083B00BC3602 /* ReSwift.framework in Frameworks */,
+				0FF7D808233E9AB900D9149D /* RxRelay.framework in Frameworks */,
 				0FF722F32170083B00BC3602 /* Differentiator.framework in Frameworks */,
 				0FF722F42170083B00BC3602 /* RxDataSources.framework in Frameworks */,
 				0FF722F52170083B00BC3602 /* RxSwift.framework in Frameworks */,
@@ -253,6 +271,7 @@
 		0FF722EB2170083B00BC3602 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FF7D807233E9AB900D9149D /* RxRelay.framework */,
 				0FF722EE2170083B00BC3602 /* Differentiator.framework */,
 				0FF722ED2170083B00BC3602 /* ReSwift.framework */,
 				0FF722EC2170083B00BC3602 /* RxCocoa.framework */,
@@ -273,6 +292,7 @@
 				0FF722B3216FFFFC00BC3602 /* Frameworks */,
 				0FF722B4216FFFFC00BC3602 /* Resources */,
 				0FF722DD2170044200BC3602 /* ShellScript */,
+				0FF7D80A233E9AB900D9149D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,6 +366,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxDataSources.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -355,6 +376,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxDataSources.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxRelay",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -554,7 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.realeyes.RECodingChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -576,7 +598,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.realeyes.RECodingChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
